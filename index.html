@@ -3,15 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Desafio Web</title>
+  
+  <script src="Bird.js"></script>
+  <script src="Pipes.js"></script>
+  
   <style>
-    /* CSS vai aqui */
+    /* CSS  */
+    #desenho1 {
+      border:1px solid black;
+    }
+    
   </style>
 </head>
 <body>
-  <!-- HTML vai aqui -->
+  <!-- HTML -->
+  <canvas id="desenho1" width="500" height="800"></canvas>
 
   <script>
-    // JavaScript vai aqui
+    // JavaScript
+    let canvas = document.getElementById("desenho1")
+    let ctx = canvas.getContext('2d')
+    
   </script>
 </body>
 </html>
