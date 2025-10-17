@@ -26,7 +26,7 @@ class Bird{
   
   desenhar(){
     this.gerenciar()
-    this.ctx.fillStyle='ff0'
+    this.ctx.fillStyle='#ff0'
     this.ctx.fillRect(this.x, this.y, this.largura, this.altura)
   }
 }
