@@ -5,7 +5,7 @@
   <title>Desafio Web</title>
   
   <script src="Bird.js"></script>
-  <script src="Pipes.js"></script>
+  <!--<script src="Pipes.js"></script>
   
   <style>
     /* CSS  */
@@ -17,7 +17,7 @@
 </head>
 <body>
   <!-- HTML -->
-  <canvas id="desenho1" width="500" height="800"></canvas>
+  <canvas id="desenho1" width="500" height="500"></canvas>
 
   <script>
     // JavaScript
@@ -25,7 +25,7 @@
     let ctx = canvas.getContext('2d')
     
     const bird=new Bird(ctx)
-    const pipes=new Pipes(ctx)
+    //const pipes=new Pipes(ctx)
     
     const game=()=>{
       ctx.clearRect(0,0,canvas.width,canvas.height)
