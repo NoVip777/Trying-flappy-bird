@@ -30,3 +30,11 @@ class Bird{
     this.ctx.fillRect(this.x, this.y, this.largura, this.altura)
   }
 }
+
+function iniciar(){
+  iniciar()
+}
+
+function pular(){
+  pular()
+}
