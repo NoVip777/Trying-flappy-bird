@@ -19,7 +19,8 @@
   <canvas id="desenho1" width="500" height="500"></canvas>
   <br>
   <button id=iniciar onclick="iniciar()">iniciar</button>
-    <br>
+  <br>
+  <br>
   <button id=pular onclick="pular()">pular</button>
 
   <script>
@@ -33,7 +34,7 @@
     const game=()=>{
       ctx.clearRect(0,0,canvas.width,canvas.height)
       bird.desenhar()
-      pipes.desenhar()
+      //pipes.desenhar()
       requestAnimationFrame(game)
     }
     requestAnimationFrame(game)
