@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <title>flappy birdizinho</title>
   
+  <!-- pega os javascript -->
   <script src="Bird.js"></script>
   <!--<script src="Pipes.js"></script> -->
   
   <style>
     /* CSS  */
+    
+    /* estilo do canvas */
     #desenho1 {
       border:1px solid black;
     }
@@ -16,21 +19,29 @@
   </style>
 </head>
 <body>
+  <!-- desenha o canvas -->
   <canvas id="desenho1" width="500" height="500"></canvas>
   <br>
+  
+  <!-- botao de iniciar -->
   <button id=iniciar onclick="bird.iniciar()">iniciar</button>
   <br>
   <br>
+  
+  <!-- botao de pular -->
   <button id=pular onclick="bird.pular()">pular</button>
 
   <script>
     // JavaScript
+    
+    // umas variaveis do canvas 
     let canvas = document.getElementById("desenho1")
     let ctx = canvas.getContext('2d')
     
     const bird=new Bird(ctx)
     //const pipes=new Pipes(ctx)
     
+    // o loop do game
     const game=()=>{
       ctx.clearRect(0,0,canvas.width,canvas.height)
       bird.desenhar()
