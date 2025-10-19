@@ -2,10 +2,9 @@ class Bird{
   constructor(ctx){
     this.ctx=ctx
     this.gravidade=0.5
-    this.velY=1
-    this.pulo=20
+    this.velY=0
+    this.pulo=-8
     this.caindo=false
-    this.pulando=false
     this.largura=25
     this.altura=20
     this.x=200
@@ -17,12 +16,7 @@ class Bird{
     this.y=(this.ctx.canvas.height/2)
   }
   pular(){
-    this.pulando=true
-    if (this.pulando){
-      this.velY-=this.pulo
-      this.y+=this.velY
-      this.pulando=false
-      this.velY=1
+    this.velY=this.pulo
     }
   }
   
@@ -41,9 +35,9 @@ class Bird{
 }
 
 function iniciar(){
-  iniciar()
+  bird.iniciar()
 }
 
 function pular(){
-  pular()
+  bird.pular()
 }
