@@ -2,6 +2,7 @@ class Bird{
   constructor(ctx){
     this.ctx=ctx
     this.gravidade=3
+    this.velY=3
     this.pulo=70
     this.caindo=false
     this.largura=25
@@ -20,7 +21,8 @@ class Bird{
   
   gerenciar(){
     if(this.caindo){
-      this.y+=this.gravidade
+      this.velY += gravidade
+      this.y+=velY
     }
   }
   
