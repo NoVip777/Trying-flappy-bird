@@ -3,8 +3,9 @@ class Bird{
     this.ctx=ctx
     this.gravidade=0.5
     this.velY=1
-    this.pulo=70
+    this.pulo=20
     this.caindo=false
+    this.pulando=false
     this.largura=25
     this.altura=20
     this.x=200
@@ -16,7 +17,13 @@ class Bird{
     this.y=(this.ctx.canvas.height/2)
   }
   pular(){
-    this.y-=this.pulo
+    this.pulando=true
+    if (this.pulando){
+      this.velY-=this.pulo
+      this.y+=this.velY
+      this.pulando=false
+      this.velY=1
+    }
   }
   
   gerenciar(){
