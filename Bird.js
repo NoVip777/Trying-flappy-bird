@@ -21,7 +21,7 @@ class Bird{
   
   gerenciar(){
     if(this.caindo){
-      this.velY += gravidade
+      this.velY += this.gravidade
       this.y+=velY
     }
   }
