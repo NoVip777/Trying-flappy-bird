@@ -4,7 +4,7 @@ class Bird{
     this.ctx=ctx
     this.gravidade=0.3
     this.velY=0
-    this.pulo=-10
+    this.pulo=-7
     this.caindo=false
     this.largura=25
     this.altura=20
