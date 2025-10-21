@@ -16,6 +16,14 @@
       border:1px solid black;
     }
     
+    /* BOTOES */
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    
   </style>
 </head>
 <body>
@@ -23,13 +31,13 @@
   <canvas id="desenho1" width="500" height="500"></canvas>
   <br>
   
-  <!-- botao de iniciar -->
-  <button id=iniciar onclick="bird.iniciar()">iniciar</button>
-  <br>
-  <br>
-  
+  <div class="container">
+      <!-- botao de iniciar -->
+  <button class="botao" onclick="bird.iniciar()">iniciar</button>
   <!-- botao de pular -->
-  <button id=pular onclick="bird.pular()">pular</button>
+  <button class="botao" onclick="bird.pular()">pular</button>
+
+  </div>
 
   <script>
     // JavaScript
