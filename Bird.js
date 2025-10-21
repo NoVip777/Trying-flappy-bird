@@ -4,7 +4,7 @@ class Bird{
     this.ctx=ctx
     this.gravidade=0.3
     this.velY=0
-    this.pulo=-12
+    this.pulo=-5
     this.caindo=false
     this.largura=25
     this.altura=20
@@ -25,6 +25,7 @@ class Bird{
   // faz pular com delay
   pular(){
     if(this.delay >= this.prontoPular){
+      this.velY=0
       this.velY+=this.pulo
       this.delay=0
     }
