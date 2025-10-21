@@ -4,7 +4,7 @@ class Bird{
     this.ctx=ctx
     this.gravidade=0.3
     this.velY=0
-    this.pulo=-5
+    this.pulo=-10
     this.caindo=false
     this.largura=25
     this.altura=20
@@ -13,7 +13,7 @@ class Bird{
     
     // delay de pulo
     this.delay=0
-    this.prontoPular=20
+    this.prontoPular=10
   }
   
   // inicia o joguinho
