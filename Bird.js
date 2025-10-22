@@ -2,7 +2,7 @@ class Bird{
   constructor(ctx){
     // algumas variaveis
     this.ctx=ctx
-    this.gravidade=0.3
+    this.gravidade=0.2
     this.velY=0
     this.pulo=-7
     this.caindo=false
