@@ -36,7 +36,7 @@ class Bird{
   // faz morreer
   morrer(){
     if(this.y > this.ctx.canvas.height){
-      if(iniciarstyle){
+      if(this.iniciarstyle){
         this.iniciarstyle.style.display="block"
       }
     }
@@ -54,6 +54,7 @@ class Bird{
   // desenha/atualiza o gerenciar e o quadrado do bird
   desenhar(){
     this.gerenciar()
+    this.morrer()
     this.ctx.fillStyle='#ff0'
     this.ctx.fillRect(this.x, this.y, this.largura, this.altura)
   }
