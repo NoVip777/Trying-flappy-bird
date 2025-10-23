@@ -11,6 +11,8 @@ class Bird{
     this.x=140
     this.y=(this.ctx.canvas.height/2)
     this.iniciarstyle = document.getElementById('iniciar')
+    this.morreu = false
+    this.msgMorte = "haha, MORREU!!!"
     
     // delay de pulo
     this.delay=0
@@ -23,6 +25,7 @@ class Bird{
     this.y=(this.ctx.canvas.height/2)
     this.iniciarstyle.style.display="none";
     this.velY = 0
+    this.morreu = false
   }
   
   // faz pular com delay
@@ -40,6 +43,12 @@ class Bird{
       if(this.iniciarstyle){
         this.iniciarstyle.style.display="block"
         this.caindo = false
+        this.morreu = true
+      }
+      if(this.morreu){
+        this.ctx.font = "50px arial"
+        this.ctx.fillStyle = "#000"
+        this.ctx.fillText(this.msgMorte, 100, this.ctx.canvas.height/2)
       }
     }
   }
