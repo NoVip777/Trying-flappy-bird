@@ -8,7 +8,7 @@ class Bird{
     this.caindo=false
     this.largura=25
     this.altura=20
-    this.x=200
+    this.x=140
     this.y=(this.ctx.canvas.height/2)
     this.iniciarstyle = document.getElementById('iniciar')
     
@@ -22,6 +22,7 @@ class Bird{
     this.caindo=true
     this.y=(this.ctx.canvas.height/2)
     this.iniciarstyle.style.display="none";
+    this.velY = 0
   }
   
   // faz pular com delay
@@ -35,9 +36,10 @@ class Bird{
   
   // faz morreer
   morrer(){
-    if(this.y > this.ctx.canvas.height){
+    if(this.y > this.ctx.canvas.height || this.y < -this.altura){
       if(this.iniciarstyle){
         this.iniciarstyle.style.display="block"
+        this.caindo = false
       }
     }
   }
