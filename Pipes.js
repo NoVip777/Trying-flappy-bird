@@ -14,11 +14,13 @@ class Pipes{
     if(this.bird.caindo){
       this.ax -= this.velocidade
       if(this.ax < 0-this.largura){
+        this.yAleatorio=Math.floor(Math.random() * (480-20*1)) + 20
         this.ay = this.yAleatorio
         this.ax = 500
       }
     }else{
       this.ax -= 0
+      this.ax = 500
     }
   }
   
