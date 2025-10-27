@@ -5,7 +5,7 @@ class Pipes{
     this.yAleatorio = Math.floor(Math.random() * (480-20*1)) + 20;
     this.ax = 500
     this.ay = this.yAleatorio
-    this.largura = 30
+    this.largura = 40
     this.altura = 500
     this.velocidade = 3
   }
