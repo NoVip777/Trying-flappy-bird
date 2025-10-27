@@ -52,7 +52,7 @@
     let ctx = canvas.getContext('2d')
     
     const bird=new Bird(ctx)
-    const pipes=new Pipes(ctx)
+    const pipes=new Pipes(ctx, bird)
     
     // o loop do game
     const game=()=>{
