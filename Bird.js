@@ -1,5 +1,5 @@
 class Bird{
-  constructor(ctx){
+  constructor(ctx, pipes){
     // algumas variaveis
     this.ctx=ctx
     this.gravidade=0.2
