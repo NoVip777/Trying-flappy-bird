@@ -6,7 +6,7 @@
   
   <!-- pega os javascript -->
   <script src="Bird.js"></script>
-  <!--<script src="Pipes.js"></script> -->
+  <script src="Pipes.js"></script>
   
   <style>
     /* CSS  */
@@ -52,13 +52,13 @@
     let ctx = canvas.getContext('2d')
     
     const bird=new Bird(ctx)
-    //const pipes=new Pipes(ctx)
+    const pipes=new Pipes(ctx)
     
     // o loop do game
     const game=()=>{
       ctx.clearRect(0,0,canvas.width,canvas.height)
       bird.desenhar()
-      //pipes.desenhar()
+      pipes.desenhar()
       requestAnimationFrame(game)
     }
     requestAnimationFrame(game)
